@@ -3,6 +3,8 @@
 # Table of Contents 
 - [Intro to Shell](#shell)
 - [Navigation](#navigation)
+- [Manipulating Files](#files)
+    - [Wildcards](#wildcards)
 
 
 ## Shell
@@ -35,3 +37,20 @@ To navigate your system files and directories (folders), you need to be used to 
 - n - Repeat previous search
 - h - help
 - q - quit
+
+## Files
+- **cp** - copy files and directories
+- **mv** - move or rename files and directories
+- **rm** - create directories
+- **mkdir** - create directories
+
+### Wildcards
+Wildcards are special characters that helps rapidly specify groups of filenames. It allows you select filenames based on patterns of characters.
+
+#### Types of wildcards
+- /* - Matches any characters
+- ? - Matches any single character
+- [characters] - Matches any character that is a member of the set characters. It can also be expressed as a ***POSIX character class***, such as **[:alnum:]** - alphanumeric, **[:alpha:]** - alphabetic, **[:digit:]** - numeric, **[:upper:]** - Uppercase alphabetic & **[:lower:]** - lowercase alphabetic characters.
+- [!characters] - Matches any character that is not a member of the set of characters.
+
+### Examples of wildcards
