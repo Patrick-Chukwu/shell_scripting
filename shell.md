@@ -48,9 +48,20 @@ To navigate your system files and directories (folders), you need to be used to 
 Wildcards are special characters that helps rapidly specify groups of filenames. It allows you select filenames based on patterns of characters.
 
 #### Types of wildcards
-- /* - Matches any characters
+- * - Matches any characters
 - ? - Matches any single character
 - [characters] - Matches any character that is a member of the set characters. It can also be expressed as a ***POSIX character class***, such as **[:alnum:]** - alphanumeric, **[:alpha:]** - alphabetic, **[:digit:]** - numeric, **[:upper:]** - Uppercase alphabetic & **[:lower:]** - lowercase alphabetic characters.
 - [!characters] - Matches any character that is not a member of the set of characters.
 
 ### Examples of wildcards
+- * - All filenames
+- g* - ll filenames that begins with g
+- b*.txt - All filenames that begins with b and ends i  .txt
+- Data??? - Any filename that begin with character "Data" and followed  by exactly 3 more characters.
+- [abc]* - Any filename that begins with either "a", "b", "c" and followed by any other characters.
+- 
+
+#### popular options with the above file manipulation commands
+- ***-i*** - interactive: the user is prompted before the action
+- ***-R*** - forced: it creates the file/directory if it doesn't exist.
+- ***-r*** - recursion : Used along `rm` to delete directories alongside all the contents inside.
