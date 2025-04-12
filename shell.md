@@ -5,7 +5,11 @@
 - [Navigation](#navigation)
 - [Manipulating Files](#files)
     - [Wildcards](#wildcards)
-
+- [Working with Commands](#commands)
+- [I/O Redirection](#ioredirection)
+- [Expansion](#expansion)
+- [Permissions](#permissions)
+- [Job Control](#jobcrontrol)
 
 ## Shell
 Shell is a program that takes commands from the keyboard and gives them to the operating system to perform. On most Linux systems, **bash** (*Bourne Again Shell*) acts as the shell program. Other available shells include: **ksh**, **tcsh**, **zsh**.
@@ -65,3 +69,16 @@ Wildcards are special characters that helps rapidly specify groups of filenames.
 - ***-i*** - interactive: the user is prompted before the action
 - ***-R*** - forced: it creates the file/directory if it doesn't exist.
 - ***-r*** - recursion : Used along `rm` to delete directories alongside all the contents inside.
+
+## Commands
+Commands can be one of four different kinds:
+1. *An executable program*. Programs can be compiled binaries written in C and C++ pr in scripting languages like shell, Perl, Python, Ruby etc.
+2. *A command built into the shell itself* : Bash provides  a number of commands internally called shell builtins. e.g `cd`
+3. *A shell function* : These are miniature shell scripts incorporated into the environment.
+4. *An alias*: Commands that we can define ourselves built from other commands.
+
+### Identifying commands 
+- **type** - Display information about command type : `type command`
+- **which** - Locate a command : `which command`
+- **help** - Display reference page for shell builtin `help command` or `command --help`
+- **man** - Display an on-line command reference `man command`
