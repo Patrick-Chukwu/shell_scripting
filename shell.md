@@ -82,3 +82,15 @@ Commands can be one of four different kinds:
 - **which** - Locate a command : `which command`
 - **help** - Display reference page for shell builtin `help command` or `command --help`
 - **man** - Display an on-line command reference `man command`
+
+## I/O Redirection
+We can redirect the output of commands to files, devices and even to the input of other commands.
+
+
+### Standard output
+
+- ***>*** We use `>` to redirect the output of a command to a file
+- ***<*** We use `<` to redirect the input to a command into a file
+
+### Pipelines
+Pipelines help connect multiple commands together
